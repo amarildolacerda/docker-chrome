@@ -1,10 +1,8 @@
-FROM ubuntu:18.04
+FROM gitpod/workspace-full:latest
 
 LABEL maintainer="Tomohisa Kusano <siomiz@gmail.com>"
 
-ENV VNC_SCREEN_SIZE 1024x768
-
-RUN mkdir copyables /
+ENV VNC_SCREEN_SIZE 1024x76
 
 COPY copyables /
 
