@@ -4,8 +4,6 @@ LABEL maintainer="Tomohisa Kusano <siomiz@gmail.com>"
 
 ENV VNC_SCREEN_SIZE 1024x76
 
-COPY copyables /
-
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     gdebi \
